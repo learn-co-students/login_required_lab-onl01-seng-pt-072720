@@ -1,0 +1,10 @@
+<h1>You are at the HELLO page </h1>
+<p>You freaking genius</p>
+<h3>Here we are going to code:</h3>
+<p>Visit the root of the app and be redirected to a login page</p>
+
+<h1>Hi, <%= session[:name] %>.</h1>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+  <input type=submit value='logout'>
+<% end %>
+
