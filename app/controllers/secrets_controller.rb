@@ -1,11 +1,11 @@
 class SecretsController < ApplicationController
-    before_action :current_user
+    before_action :require_logged_in
 
     def show
-        if !current_user
-            redirect_to '/'
-        else
-            render :show
-        end
+        # if !current_user
+        #     redirect_to '/'
+        # else
+        #     render :show
+        # end
     end
 end
