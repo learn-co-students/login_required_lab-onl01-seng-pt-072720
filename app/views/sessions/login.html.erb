@@ -1,0 +1,7 @@
+<h1>This is login page:</h1>
+
+<%= form_with(url: '/', method: 'get', local: true) do %>
+  <%= label_tag(:q, "Login:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Login") %>
+<% end %>
